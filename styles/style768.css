@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+  body {
+    margin: 0 40px;
+  }
+
+  .header-title {
+    font-size: clamp(36px, calc(4.911vw + 20.285px), 58px);
+  }
+
+  .skills__title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .skills-container {
+    column-gap: clamp(53px, 5vw, 78px);
+    row-gap: 30px;
+  }
+
+  .skill-image {
+    width: clamp(30px, calc(4.464vw + 15.714px), 50px);
+  }
+
+  .projects {
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .project-skill-image {
+    width: clamp(20%, calc(4.464vw + 5.714%), 40%);
+  }
+
+  .first-item {
+    margin-top: 0;
+  }
+
+  .social-title {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 1140px) {
+  body {
+    margin-left: clamp(40px, calc(21.505vw - 125.16px), 120px);
+    margin-right: clamp(40px, calc(21.505vw - 125.16px), 120px);
+  }
+  .developer-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dev-dash {
+    display: none;
+  }
+
+  .nav-link {
+    margin-left: 30px;
+  }
+
+  .first-item {
+    margin-left: 0;
+  }
+
+  .header-image {
+    height: clamp(280px, calc(59.14vw - 174.4px), 500px);
+  }
+
+  .header-title {
+    margin-top: clamp(0px, calc(13.44vw - 103.2px), 50px);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    justify-content: normal;
+  }
+}
+
+@media (max-width: 416px) {
+  .social-item {
+    margin-left: clamp(40px, calc(41.667vw - 93.333px), 80px);
+  }
+
+  .first-item {
+    margin-left: 0;
+  }
+}

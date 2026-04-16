@@ -1,0 +1,248 @@
+body {
+  max-width: 1600px;
+  margin: 0 120px;
+
+  font-family: "Open Sans", "Archivo Black", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+
+  /* posición interpolada sin media queries */
+  --glow-x: clamp(
+    10px,
+    calc(93.3036vw - 288.5714px),
+    clamp(428px, calc(75.1488vw - 149.1429px), 933px)
+  );
+
+  --glow-y: clamp(
+    10px,
+    calc(6.6964vw - 11.4286px),
+    clamp(40px, calc(29.7619vw - 188.5714px), 240px)
+  );
+
+  background:
+    radial-gradient(
+      ellipse 300px 300px at var(--glow-x) var(--glow-y),
+      rgba(109, 109, 255, 0.45) 0%,
+      rgba(90, 90, 220, 0.3) 30%,
+      rgba(40, 40, 120, 0.15) 55%,
+      transparent 80%
+    ),
+    #111111;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.header-text-block {
+  flex: 1;
+}
+
+.header-title {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-size: clamp(58px, calc(2.083vw + 42px), 72px);
+
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.header-image-wrapper {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.header-image {
+  display: block;
+  height: 500px;
+}
+
+.developer-info {
+  opacity: 0.5;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-description {
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.nav-links {
+  display: flex;
+  white-space: nowrap;
+  list-style-type: none;
+  padding: 0;
+  justify-items: center;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #4c1a97, #6d6dff);
+
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-image {
+  width: 50px;
+  height: auto;
+}
+
+.projects {
+  display: flex;
+}
+
+.project-card {
+  width: 590px;
+  background-color: #1c1c1c;
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-media {
+  position: relative;
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* Ajusta según necesites */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  pointer-events: none; /* Para que no interfiera con los clics */
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9; /* Esto mantiene una proporción de 16:9 */
+  object-fit: cover; /* Importante: evita que la imagen se deforme */
+}
+
+.project-skills {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.skills__title {
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: "Archivo Black", Arial, sans-serif; /* ← Agrega respaldo */
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.project-skill-image {
+  width: 40px;
+}
+
+.project-card-content {
+  padding: 30px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.project__description {
+  margin: 0;
+}
+
+.project-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-items: center;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.proj-link {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.externalLink-icon::before {
+  content: "\f08e";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+.externalLink-icon {
+  color: #6d6dff;
+}
+
+.externalLink-icon:hover {
+  opacity: 50%;
+}
+
+.github-icon::before {
+  content: "\f09b";
+  font-family: "Font Awesome 7 Brands";
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.github-icon {
+  color: #ffffff;
+  opacity: 60%;
+  margin-left: 20px;
+}
+
+.github-icon:hover {
+  opacity: 30%;
+}

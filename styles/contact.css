@@ -1,0 +1,67 @@
+.footer {
+  background:
+    radial-gradient(
+      ellipse 300px 300px at 50% 50%,
+      rgba(109, 109, 255, 0.45) 0%,
+      rgba(90, 90, 220, 0.3) 30%,
+      rgba(40, 40, 120, 0.15) 55%,
+      transparent 80%
+    ),
+    #111111;
+}
+
+.social-container {
+  justify-items: center;
+}
+
+.social-title {
+  margin: 0;
+  padding-top: 100px;
+  margin-bottom: 20px;
+  font-family: "Archivo Black", Arial, sans-serif; /* ← Agrega respaldo */
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.social-contact {
+  margin: 0;
+}
+
+.social-mail {
+  margin: 0;
+  color: #6d6dff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.social-mail:hover {
+  opacity: 50%;
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-items: center;
+  margin: 0;
+  padding-bottom: 102px;
+  padding-top: 30px;
+}
+
+.social-item {
+  margin-left: 80px;
+}
+
+.social-item:hover {
+  opacity: 50%;
+}
+
+.last-item {
+  padding-right: 0px;
+}
+
+.first-item {
+  padding-left: 0px;
+  margin-left: 0px;
+}
